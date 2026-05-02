@@ -21,7 +21,74 @@
     </header>
 
     <main>
-      <section id="tickets"></section>
+      <!--section - tickets-->
+      <section id="tickets">
+        <div class="wrapper">
+          <div class="ticket">
+            <h1>skip the climbing, catch the bus</h1>
+            <p>
+              We sell tickets to the best seats in the house – houses on wheels,
+              that is! Get ready for jaw-dropping views without breaking a
+              sweat.
+            </p>
+            <div class="counter">
+              <label for="round-trip"
+                >Round trip
+                <input type="radio" name="select" id="round-trip" />
+              </label>
+              <label for="one-way"
+                >One way
+                <input type="radio" name="select" id="one-way" />
+              </label>
+
+              <img src="img/field.png" />
+            </div>
+
+            <div class="grid-flight">
+              <div class="location">
+                <label for="departure">Departure</label>
+                <input
+                  type="text"
+                  name="departure"
+                  id="departure"
+                  placeholder="Your City/Station"
+                />
+                <label for="arrival">Arrival</label>
+                <input
+                  type="text"
+                  name="arrival"
+                  id="arrival"
+                  placeholder="Where to?"
+                />
+              </div>
+
+              <div class="date">
+                <label for="depart-return">Pick your lucky day</label>
+                <input
+                  type="date"
+                  name="depart"
+                  id="depart"
+                  placeholder="Depart"
+                />
+                <input
+                  type="date"
+                  name="return"
+                  id="return"
+                  placeholder="Return"
+                />
+              </div>
+              <div class="find-ride">
+                <button type="submit">Find My Alpine Ride</button>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="img/hero.png" alt="hut in the mountains" />
+          </div>
+        </div>
+      </section>
+
+      <!--section - achievements-->
       <section id="achievemetns">
         <div class="wrapper">
           <div>
@@ -45,9 +112,17 @@
           </div>
         </div>
       </section>
+
+      <!--section - gallery-->
       <section id="gallery"></section>
+
+      <!--section - apps-->
       <section id="apps"></section>
+
+      <!--section - faqs-->
       <section id="faqs"></section>
+
+      <!--section - contacts-->
       <section id="contacts"></section>
     </main>
 
