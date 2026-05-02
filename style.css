@@ -203,3 +203,13 @@ body {
     font-weight: 500;
 }
 
+/* section - grid - gallery */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-gallery img:first-child {
+    grid-row: span 2;
+}
