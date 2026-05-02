@@ -92,30 +92,88 @@ body {
     margin-right: 24px;
 }
 
+.counter label {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--primary-black)
+}
+
 .image {
     height: 704px;
     margin-top: 64px;
 }
 
 /*grid - departure, arrival, pick your lucky day, button*/
-/* .grid-flight {
+.grid-flight {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     column-gap: 32px;
     row-gap: 24px;
-} */
-/*?????*/
+}
+
 .location {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    border: 1px solid black;
+    grid-template-rows: 1fr;
+    column-gap: 32px;
+}
+
+.location > label, input {
+    border: none;
+}
+
+.location label {
+    font-size: 16px;
+    font-style: semi-bold;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.location > input {
+    padding-top: 16px;
 }
 
 .date {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+}
+
+.date > label, input {
+    border: none;
+}
+
+.date label {
     grid-column: span 2;
-    border: 1px solid black;
+    font-size: 16px;
+    font-style: semi-bold;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: 600;
+}
+
+.date input {
+    padding-top: 16px;
+}
+
+.find-ride button {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 16px 24px;
+    gap: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
 }
 
 /* section - achievement */
