@@ -177,39 +177,86 @@ body {
 }
 
 /* section - achievement */
-#achievemetns {
+#achievements {
     background-color: var(--primary-blue);
     color: var(--white);
     padding: 59.5px 0;
 }
 
-#achievemetns > div {
+#achievements > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#achievemetns > div > div > p {
+#achievements > div > div > p {
     text-align: center;
 }
 
-#achievemetns > div > div > p:first-child {
+#achievements > div > div > p:first-child {
     font-size: 50px;
     font-weight: 700;
 }
 
-#achievemetns > div > div > p:last-child {
+#achievements > div > div > p:last-child {
     font-size: 20px;
     font-weight: 500;
 }
 
-/* section - grid - gallery */
+/* section - grid 1 - gallery */
 .grid-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    column-gap: 32px;
+    padding-bottom: 128px;
 }
 
-.grid-gallery img:first-child {
-    grid-row: span 2;
+.grid-gallery .col1 img,
+.grid-gallery .col2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    row-gap: 24px;
 }
+
+/*grid 2*/
+.col1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 24px;
+    column-gap: 32px;
+}
+
+.col1 > img {
+    height: 376px;
+    object-fit: cover;
+}
+
+/*grid 3*/
+.col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    row-gap: 24px;
+    column-gap: 32px;
+}
+
+.col2 > img {
+    height: 376px;
+    object-fit: cover;
+}
+
+.col2 img:first-child,
+.col2 img:nth-child(2) {
+    height: 100%;
+}
+
+.col2 img:last-child {
+    grid-column: span 2;
+}
+
+
+
+
