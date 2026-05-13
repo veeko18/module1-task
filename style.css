@@ -21,6 +21,12 @@
 
 body {
     font-family: var(--font-family);
+    background: linear-gradient(
+        to top,
+        #F5F5F5 0%,
+        #DDECFF 50%,
+        #F5F5F5 100%
+    );
 }
 
 .wrapper {
@@ -88,7 +94,7 @@ body {
 }
 
 /* SECTION TICKETS */
-#tickets {
+/* #tickets {
     display: flex;
     justify-content: space-between;
 }
@@ -139,6 +145,100 @@ body {
 .image {
     height: 704px;
     margin-top: 64px;
+} */
+
+/* SECTION TICKETS */
+#tickets {
+    padding-top: 64px;
+    padding-bottom: 128px;
+}
+
+#tickets > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+#tickets > div > div {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+} 
+
+#tickets > div > div > h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--primary-black);
+}
+
+#tickets form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#tickets .counter_block {
+    display: flex;
+    gap: 6px;
+}
+#tickets form > div:first-child {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 24px;
+    border-radius: 10px;
+} 
+
+#tickets form > div:nth-child(2) input,
+#tickets form > div:nth-child(3) input {
+    padding: 16px 40px 16px 24px;
+    border-radius: 10px;
+    border: none;
+    width: 304px;
+}
+
+#tickets form > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#tickets form > div:nth-child(2) label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#tickets form > div:nth-child(3) {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#tickets form > div:nth-child(3) > div {
+    display: flex;
+    gap: 32px;
+}
+
+#tickets form > button {
+    width: 640px;
+    background-color:var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 16px 0;
+    cursor: pointer;
+} 
+
+#tickets > div > img {
+    width: 640px;
+    height: 704px;
+    object-fit: contain;
 }
 
 /*GRID - DEPARTURE, ARRIVAL, PICK YOUR LUCKY DAY, BUTTON*/
@@ -485,6 +585,9 @@ h3 {
     }
 
     /*TICKETS*/
+    #tickets > div > img {
+    display: none;
+}
 
     /*ACHIEVEMENTS*/
     #achievements > div {
@@ -549,6 +652,91 @@ h3 {
 
 
     /*TICKETS*/
+#tickets {
+    padding-top: 24px;
+}
+
+#tickets > div > div {
+    width: 320px;
+} 
+
+#tickets > div > div > h1 {
+    font-size: 32px;
+}
+
+#tickets > div > div > p {
+    font-size: 11px;
+}
+
+#tickets form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#tickets .counter_block {
+    display: flex;
+    gap: 6px;
+}
+
+#tickets form > div:first-child {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 24px;
+    border-radius: 10px;
+} 
+
+#tickets form > div:nth-child(2) input,
+#tickets form > div:nth-child(3) input {
+    padding: 16px 40px 16px 24px;
+    border-radius: 10px;
+    border: none;
+    width: 304px;
+}
+
+#tickets form > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 24px;
+}
+
+#tickets form > div:nth-child(2) label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#tickets form > div:nth-child(3) {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#tickets form > div:nth-child(3) > div {
+    display: flex;
+    gap: 32px;
+}
+
+#tickets form > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#tickets form > button {
+    width: 320px;
+} 
+
+#tickets > div > img {
+    width: 640px;
+    height: 704px;
+    object-fit: contain;
+}
+
 
     /*ACHIEVEMENTS*/
     #achievements > div {
