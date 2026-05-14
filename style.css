@@ -180,8 +180,15 @@ body {
 
 #tickets .counter_block {
     display: flex;
-    gap: 6px;
+    color: var(--primary-grey);
+    gap: 8px;
 }
+
+#tickets .counter_block > div {
+    display: flex;
+    gap: 10px;
+}
+
 #tickets form > div:first-child {
     background-color: var(--white);
     display: flex;
@@ -651,13 +658,13 @@ h3 {
     }
 
 
-    /*TICKETS*/
+/*TICKETS*/
 #tickets {
     padding-top: 24px;
 }
 
 #tickets > div > div {
-    width: 320px;
+    width: 100%;
 } 
 
 #tickets > div > div > h1 {
@@ -676,7 +683,14 @@ h3 {
 
 #tickets .counter_block {
     display: flex;
-    gap: 6px;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+#tickets .counter_block > div {
+    display: flex;
+    gap: 10px;
 }
 
 #tickets form > div:first-child {
@@ -686,6 +700,7 @@ h3 {
     align-items: center;
     padding: 7px 24px;
     border-radius: 10px;
+    font-size: 12px;
 } 
 
 #tickets form > div:nth-child(2) input,
@@ -693,7 +708,7 @@ h3 {
     padding: 16px 40px 16px 24px;
     border-radius: 10px;
     border: none;
-    width: 304px;
+    width: 100%;
 }
 
 #tickets form > div:nth-child(2) {
