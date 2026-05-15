@@ -543,6 +543,7 @@ h3 {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 192px;
 }
 
 .footer-left {
@@ -562,13 +563,14 @@ h3 {
 
 .footer-right {
     display: flex;
-    width: 576px;
+    width: 640px;
     gap: 32px;
 }
 
-.footer-right div {
+.footer-right > div {
     display: flex;
     flex-direction: column;
+    width: 192px;
     gap: 16px;
 }
 
@@ -668,7 +670,13 @@ h3 {
 
 
     /*FOOTER*/
-
+    #footer-right {
+        align-items: center;
+    } 
+    
+    #footer > div > div > img {
+        margin-bottom: 40px;
+    }
 }
 
 /*MOBILE SCREEN*/
